@@ -1,0 +1,205 @@
+#entryStoreTab {
+    width: 100% !important;
+    height: 100% !important;
+    margin: auto;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #f0f0f0;
+}
+
+header.entryStore {
+    background-color: rgb(50, 50, 50);
+    padding: 10px 20px 10px 20px;
+    justify-items: center;
+    border-color: #525252;
+    border-bottom: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entryStoreCheckboxLabel {
+    background-color: rgb(50, 50, 50);
+    font-size: 3em;
+    margin: auto;
+}
+
+.entryVisible {
+    background-color: #252525;
+    color: #f0f0f0;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: center;
+    font-size: 3em;
+    font-weight: 100;
+    border: none;
+}
+
+output.entryStore {
+    color: #f0f0f0;
+    font-size: 3em;
+    font-weight: 400;
+    margin: auto auto 10px auto;
+}
+
+.entryToggleContainer {
+    width: calc( 100% - 6% );
+    height: 100%;
+    padding: 0 3% 0 3%;
+    display: inline-block;
+    position: absolute;
+}
+
+.entryStoreCentralContent {
+    padding: 0 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entryStoreVisibilityToggle {
+    font-size: 3em;
+    background: #323232; /*same as the modal-container's background*/
+    border: 0;
+    color: white;
+    float: left;
+    height: 150px;
+    width: 150px;
+}
+
+.entryStoreColorSchemeToggle {
+    font-size: 5em;
+    background: #323232; /*same as the modal-container's background*/
+    border: 0;
+    color: white;
+    float: right;
+    height: 150px;
+    width: 175px;
+}
+
+label.entryStoreHeader {
+    color: #f0f0f0;
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+main.entryStore {
+    height: 90%;
+    background-color: rgb(50, 50, 50);
+    overflow-y: scroll;
+}
+
+ol.entryStore {
+    margin: 0;
+    padding: 5%;
+    list-style-type: none;
+}
+
+li.entryStore {
+    margin: 0 0 33px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label.entryStoreContainer {
+    margin: 0;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+label.entryText {
+    width: calc( 100% - 70px - 50px - 30px - 30px );
+    font-size: 2.6em;
+    font-weight: 300;
+    margin: 0 30px 0 30px;
+    text-align: left;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*
+label.entryColor {
+*/
+.entryColor {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border: 2px solid #525252;
+    border-radius: 50%;
+}
+
+/* The container */
+.entryStoreContainer {
+    display: block;
+    position: relative;
+    /*font-size: 22px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+input.entryStoreContainer {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Create a custom checkbox */
+span.entryStoreCheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    border-bottom: 3px solid #525252;
+}
+
+/* When the checkbox is checked, add a blue background */
+.entryStoreContainer input:checked ~ .entryStoreCheckmark {
+    background-color: rgb(50, 50, 50);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.entryStoreContainer :after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.entryStoreContainer input:checked ~ .entryStoreCheckmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.entryStoreContainer .entryStoreCheckmark:after {
+    left: 50%;
+    top: 15%;
+    width: 20%;
+    height: 50%;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
