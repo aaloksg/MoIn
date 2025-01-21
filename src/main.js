@@ -1,9 +1,3 @@
-// Import libs
-import './libs/d3.js';
-import './libs/hammer.js';
-import './libs/vue.global.js';
-import './libs/interact.min.js';
-
 // Import css
 import './css/main.css';
 
