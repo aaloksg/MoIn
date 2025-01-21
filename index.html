@@ -1,17 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <meta charset="utf-8" />
     <head>
+        <meta charset="UTF-8" />
         <title>MoInVis ParaCoords</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <script src="scripts/libs/d3.js"></script>
-        <script src="scripts/libs/hammer.js"></script>
-        <script src="scripts/libs/vue.global.js"></script>
-        <script src="scripts/libs/interact.min.js"></script>
-
-        <!-- https://github.com/SortableJS/Sortable -->
         <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-        <!--<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -19,46 +12,10 @@
             href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
             rel="stylesheet"
         />
-
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/styles_entry_store.css"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/styles_inputrange.css"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/styles_axis_store.css"
-        />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-
-        <script src="data/json/woodwaste.js"></script>
-        <script src="data/json/metalwasteferrousandnon.js"></script>
-        <script src="data/json/householdsimilarwaste.js"></script>
-        <script src="data/json/vegetalwaste.js"></script>
-        <script src="data/json/animalfaecesurinemanure.js"></script>
-        <script src="data/json/animalmixedfoodwaste.js"></script>
-        <script src="data/json/discardedvehicles.js"></script>
-        <script src="data/json/textilewaste.js"></script>
-        <script src="data/json/paperandcardboardwaste.js"></script>
-        <script src="data/json/glasswaste.js"></script>
-        <script src="data/json/chemwaste.js"></script>
-        <script src="data/json/healthcarebiowaste.js"></script>
-        <script src="data/json/plasticwaste.js"></script>
-        <script src="data/json/primarywaste.js"></script>
-        <script src="data/json/rubberwaste.js"></script>
-        <script src="data/json/secwaste.js"></script>
-        <script src="data/json/totalwaste.js"></script>
-
         <link rel="shortcut icon" href="#" />
     </head>
     <body>
@@ -158,7 +115,7 @@
                     <input
                         class="entryStoreVisibilityToggle"
                         type="image"
-                        src="images/select-all.png"
+                        src="/src/images/select-all.png"
                         @click="toggleVisibility"
                     />
                     <div class="entryStoreCentralContent">
@@ -168,7 +125,7 @@
                     <input
                         class="entryStoreColorSchemeToggle"
                         type="image"
-                        :src="colourBlindSafe?'images/normalpalette.png':'images/colourblindpalette.png'"
+                        :src="colourBlindSafe?'/src/images/normalpalette.png':'/src/images/colourblindpalette.png'"
                         @click="toggleColourScheme"
                     />
                 </header>
@@ -374,31 +331,6 @@
                 <div id="axisDetailViewGradient"></div>
             </div>
         </div>
-        <script type="text/javascript" src="scripts/util.js"></script>
-        <script type="text/javascript" src="scripts/actionmanager.js"></script>
-        <script type="text/javascript" src="scripts/datahandler.js"></script>
-        <script type="text/javascript" src="scripts/button.js"></script>
-        <script
-            type="text/javascript"
-            src="scripts/contextindicator.js"
-        ></script>
-        <script type="text/javascript" src="scripts/itempath.js"></script>
-        <script type="text/javascript" src="scripts/axisbrush.js"></script>
-        <script type="text/javascript" src="scripts/brushmanager.js"></script>
-        <script
-            type="text/javascript"
-            src="scripts/axisinteractionmanager.js"
-        ></script>
-        <script type="text/javascript" src="scripts/axis.js"></script>
-        <script type="text/javascript" src="scripts/tabmanager.js"></script>
-        <script type="text/javascript" src="scripts/overlaytab.js"></script>
-        <script type="text/javascript" src="scripts/tab.js"></script>
-        <script type="text/javascript" src="scripts/paracoorder.js"></script>
-        <script type="text/javascript" src="scripts/entrystore.js"></script>
-        <script type="text/javascript" src="scripts/attributestore.js"></script>
-        <script type="text/javascript" src="scripts/brushsetter.js"></script>
-        <script type="text/javascript" src="scripts/axisdetailview.js"></script>
-        <script type="text/javascript" src="scripts/moin.js"></script>
-        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="module" src="/src/main.js"></script>
     </body>
 </html>
