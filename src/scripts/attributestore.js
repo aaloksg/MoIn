@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 /*
  *
  * Descr.: Handles data and UI functionality for the attribute store tab.
@@ -5,6 +7,7 @@
  *
  * <Description>
  */
+
 window.MoInVis = window.MoInVis || {};
 var MoInVis = window.MoInVis;
 MoInVis.Paracoords = MoInVis.Paracoords || {};

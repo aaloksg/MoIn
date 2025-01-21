@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 /*
  *
  * Descr.: Tab Manager. Manages positions of tabs and transitions between tabs.

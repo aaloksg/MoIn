@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 window.MoInVis = window.MoInVis || {};
 var MoInVis = window.MoInVis;
 MoInVis.Paracoords = MoInVis.Paracoords || {};

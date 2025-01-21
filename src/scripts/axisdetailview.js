@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 /*
  *
  * Descr.: Handles data and UI functionality for the axis detail view overlay tab.
@@ -312,7 +314,7 @@ MoInVis.Paracoords.axisDetailView = function (moin, parentDiv) {
                 const emphasis = item.getEmphasis();
                 const alpha = item.getCurrentAlpha();
 
-                data =
+                let data =
                     MoInVis.Paracoords.Data.wasteByCountries[country].data[
                         chosenYear
                     ];

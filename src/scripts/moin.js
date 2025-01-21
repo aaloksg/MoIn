@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 /*
  *
  * Descr.: Moin Instance. Application parent class that creates tabs, and tabhandler.

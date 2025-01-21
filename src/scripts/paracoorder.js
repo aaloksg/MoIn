@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 /*
  *
  * Descr.: Handles drawings the UI and data for the paracoords tab.
