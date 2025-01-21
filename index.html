@@ -123,9 +123,17 @@
                         <label class="entryStoreHeader">Total entries</label>
                     </div>
                     <input
+                        v-if="colourBlindSafe"
                         class="entryStoreColorSchemeToggle"
                         type="image"
-                        :src="colourBlindSafe?'/src/images/normalpalette.png':'/src/images/colourblindpalette.png'"
+                        src="/src/images/normalpalette.png"
+                        @click="toggleColourScheme"
+                    />
+                    <input
+                        v-else
+                        class="entryStoreColorSchemeToggle"
+                        type="image"
+                        src="/src/images/colourblindpalette.png"
                         @click="toggleColourScheme"
                     />
                 </header>
