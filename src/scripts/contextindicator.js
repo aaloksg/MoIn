@@ -1,3 +1,5 @@
+import Hammer from 'hammerjs';
+
 import * as d3 from 'd3';
 
 window.MoInVis = window.MoInVis || {};

@@ -1,3 +1,5 @@
+import Hammer from 'hammerjs';
+
 /*
  *
  * Descr.: Base class for tabs.

@@ -1,3 +1,5 @@
+import Hammer from 'hammerjs';
+
 /*
  *
  * Descr.: Handles creation of interaction group, and handles events for axis brushing and reordering.
