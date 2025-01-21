@@ -16407,3 +16407,5 @@ var Vue = (function (exports) {
 
     return exports;
 })({});
+
+window.Vue = Vue;
